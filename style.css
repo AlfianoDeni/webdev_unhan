@@ -1,0 +1,294 @@
+* {
+    margin: 0px;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    background-color: #0693f0;
+    padding: 30px 5px 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+nav.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.logo {
+    margin: 0;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: #FCF9F9;
+    font-size: 50px;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 70px 0;
+}
+.img {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+.foto {
+    margin: 20px
+}
+.card {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.scrollTop {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.scrollTop.active {
+    bottom: 40;
+    visibility: visible;
+    opacity: 1;
+}
+.scroll-img {
+    height: 50px;
+    width: 50px;
+}
+.content {
+    display: flex;
+}
+.bg {
+    margin: -200px 0px -550px 100px;
+    height: 35%;
+    width: 35%;
+}
+.me {
+    margin-left: 50px;
+}
+.me h2 {
+    font-size: 40px;
+    color: #020de4;
+}
+.me p {
+    font-size: 20px;
+}
+footer {
+    background-color: #0693f0;
+    color: #FCF9F9;
+    text-align:  center;
+    padding: 30px 0;
+}
+.bio {
+    
+    text-align: center;
+    padding: 80px 0;
+    background-color: #0693f0;
+    border-radius: 10px 10px 0 0;
+    color: #FCF9F9;
+}
+
+.achievement {
+    padding: 10px 9px;
+    font-style: italic;
+}
+.achievement p {
+    text-decoration: underline;
+}
+.bio p {
+    padding: 10px 0;
+}
+.isiMotto {
+    text-align: center;
+    font-style: italic;
+    padding: 130px 0;
+    background-color:#0693f0;
+    border-radius: 10px 10px 0 0;
+    color: #FCF9F9;
+}
+
+.motto {
+    font-style: italic;
+    text-align: right;
+}
+
+.motto p {
+    padding: 30px 10px;
+}
+.education{
+    text-align: center;
+    align-items: center;
+}
+.edu {
+    align-items: center;
+    padding-bottom: 20px;
+}
+.edu-two {
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin: 0 30%; 
+}
+.edu-title {
+    font-size: 40px;
+    align-items: center;
+    margin: 20px 0;
+}
+.edu-title span{
+    color: #020de4;
+}
+.flip-card {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin: 20px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    border-radius: 10px;
+}
+  
+.flip-card-front {
+    background-color: dodgerblue;
+    color: white;
+}
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+.flip-card-font{
+    margin-top: 30%;
+    font-size: 100%;
+}
+.skills {
+    background-color: #F2F2F2;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+.skills span {
+    color: #020de4;
+}
+.skill-card{
+    align-items: center;
+}
+.skill-one{
+    display: flex;
+    margin: 0 22%;
+}
+.skill-title {
+    font-size: 40px;
+}
+.skill-image {
+    height: 100px;
+    width: 100px;
+    margin: 30px 0 -90px 8px;
+}
+.text h2 {
+    margin-bottom: 4px;
+}
+.overlay {
+    background-color: antiquewhite;
+    height: 200px;
+    width: 180px;
+    text-align: center;
+    margin: 30px;
+    padding-top: 60px;
+    border-radius: 10px;
+}
+.overlay:hover {
+    background-color: #0693f0;
+    color: #FCF9F9;
+}
+.contact{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact-title {
+    font-size: 40px;
+    margin: 20px 0 ;
+    padding: 20px 0;
+}
+.contact-title span {
+    color: #020de4;
+}
+.contact-part {
+    display: flex;
+    margin: 20px 35%;
+    position: relative;
+}
+.contact-image{
+    height: 50px;
+    width: 50px;
+}
+.contact-part a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+}
+.contact-text{
+    padding: 15px 0 0 10px;
+}
